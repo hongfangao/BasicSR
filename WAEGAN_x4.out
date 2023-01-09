@@ -1,0 +1,52 @@
+Sender: LSF System <lsfadmin@gpu21>
+Subject: Job 444867: <WAEGAN_x4> in cluster <platform> Done
+
+Job <WAEGAN_x4> was submitted from host <login01> by user <zfyang> in cluster <platform> at Sat Dec 17 21:02:11 2022
+Job was executed on host(s) <gpu21>, in queue <gpu2>, as user <zfyang> in cluster <platform> at Sat Dec 17 21:02:00 2022
+</data/home/zfyang> was used as the home directory.
+</data/home/zfyang/home/hfgao/BasicSR> was used as the working directory.
+Started at Sat Dec 17 21:02:00 2022
+Terminated at Mon Dec 26 10:42:53 2022
+Results reported at Mon Dec 26 10:42:53 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -n 1
+#BSUB -q gpu2
+#BSUB -o WAEGAN_x4.out
+#BSUB -e WAEGAN_x4.err
+#BSUB -J WAEGAN_x4
+python basicsr/train.py -opt options/train/waegan/train_WAEGAN_x4.yml
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   966118.62 sec.
+    Max Memory :                                 5729 MB
+    Average Memory :                             5435.48 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              36
+    Max Threads :                                171
+    Run time :                                   740453 sec.
+    Turnaround time :                            740442 sec.
+
+The output (if any) follows:
+
+Disable distributed.
+Name UNetDiscriminatorSN is not found, use name: UNetDiscriminatorSN_basicsr!
+Name UNetDiscriminatorSN is not found, use name: UNetDiscriminatorSN_basicsr!
+
+
+PS:
+
+Read file <WAEGAN_x4.err> for stderr output of this job.
+

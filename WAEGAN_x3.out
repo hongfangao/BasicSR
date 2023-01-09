@@ -1,13 +1,13 @@
-Sender: LSF System <lsfadmin@gpu20>
-Subject: Job 444868: <WAEGAN_x3> in cluster <platform> Exited
+Sender: LSF System <lsfadmin@gpu19>
+Subject: Job 444875: <WAEGAN_x3> in cluster <platform> Done
 
-Job <WAEGAN_x3> was submitted from host <login01> by user <zfyang> in cluster <platform> at Sat Dec 17 21:11:04 2022
-Job was executed on host(s) <gpu20>, in queue <gpu2>, as user <zfyang> in cluster <platform> at Sat Dec 17 21:10:43 2022
+Job <WAEGAN_x3> was submitted from host <login01> by user <zfyang> in cluster <platform> at Sat Dec 17 21:27:13 2022
+Job was executed on host(s) <gpu19>, in queue <gpu2>, as user <zfyang> in cluster <platform> at Sat Dec 17 21:27:27 2022
 </data/home/zfyang> was used as the home directory.
 </data/home/zfyang/home/hfgao/BasicSR> was used as the working directory.
-Started at Sat Dec 17 21:10:43 2022
-Terminated at Sat Dec 17 21:24:55 2022
-Results reported at Sat Dec 17 21:24:55 2022
+Started at Sat Dec 17 21:27:27 2022
+Terminated at Sun Dec 25 10:46:26 2022
+Results reported at Sun Dec 25 10:46:26 2022
 
 Your job looked like:
 
@@ -24,25 +24,25 @@ python basicsr/train.py -opt options/train/waegan/train_WAEGAN_x3.yml
 
 ------------------------------------------------------------
 
-TERM_OWNER: job killed by owner.
-Exited with exit code 130.
+Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   1077.43 sec.
-    Max Memory :                                 4706 MB
-    Average Memory :                             4250.64 MB
+    CPU time :                                   875134.31 sec.
+    Max Memory :                                 5902 MB
+    Average Memory :                             5241.31 MB
     Total Requested Memory :                     -
     Delta Memory :                               -
-    Max Swap :                                   -
+    Max Swap :                                   2 MB
     Max Processes :                              36
-    Max Threads :                                120
-    Run time :                                   852 sec.
-    Turnaround time :                            831 sec.
+    Max Threads :                                175
+    Run time :                                   652739 sec.
+    Turnaround time :                            652753 sec.
 
 The output (if any) follows:
 
 Disable distributed.
+Path already exists. Rename it to /data/home/zfyang/home/hfgao/BasicSR/tb_logger/WAEGANtest_duald_x3_archived_20221217_212805
 Name UNetDiscriminatorSN is not found, use name: UNetDiscriminatorSN_basicsr!
 Name UNetDiscriminatorSN is not found, use name: UNetDiscriminatorSN_basicsr!
 

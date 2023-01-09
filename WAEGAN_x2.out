@@ -1,0 +1,53 @@
+Sender: LSF System <lsfadmin@gpu19>
+Subject: Job 444876: <WAEGAN_x2> in cluster <platform> Done
+
+Job <WAEGAN_x2> was submitted from host <login01> by user <zfyang> in cluster <platform> at Sat Dec 17 21:27:44 2022
+Job was executed on host(s) <gpu19>, in queue <gpu2>, as user <zfyang> in cluster <platform> at Sat Dec 17 21:27:57 2022
+</data/home/zfyang> was used as the home directory.
+</data/home/zfyang/home/hfgao/BasicSR> was used as the working directory.
+Started at Sat Dec 17 21:27:57 2022
+Terminated at Sat Dec 24 21:08:06 2022
+Results reported at Sat Dec 24 21:08:06 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/sh
+#BSUB -gpu "num=1:mode=exclusive_process"
+#BSUB -n 1
+#BSUB -q gpu2
+#BSUB -o WAEGAN_x2.out
+#BSUB -e WAEGAN_x2.err
+#BSUB -J WAEGAN_x2
+python basicsr/train.py -opt options/train/waegan/train_WAEGAN_x2.yml
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   834648.56 sec.
+    Max Memory :                                 6750 MB
+    Average Memory :                             5336.72 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              36
+    Max Threads :                                183
+    Run time :                                   603609 sec.
+    Turnaround time :                            603622 sec.
+
+The output (if any) follows:
+
+Disable distributed.
+Path already exists. Rename it to /data/home/zfyang/home/hfgao/BasicSR/tb_logger/WAEGANtest_duald_x2_archived_20221217_212815
+Name UNetDiscriminatorSN is not found, use name: UNetDiscriminatorSN_basicsr!
+Name UNetDiscriminatorSN is not found, use name: UNetDiscriminatorSN_basicsr!
+
+
+PS:
+
+Read file <WAEGAN_x2.err> for stderr output of this job.
+
